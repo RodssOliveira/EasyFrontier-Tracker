@@ -9,7 +9,7 @@ class Tracker(models.Model):
     blood_type = models.CharField(max_length=10, null=True, blank=True)
     patent = models.CharField(max_length=200, null=True, blank=True)
     location = models.CharField(max_length=200, null=True, blank=True)
-    heartbeat = models.CharField(max_length=200, null=True, blank=True)
+    heartbeat = models.IntegerField(null=True, blank=True)
     lat = models.CharField(max_length=200, null=True, blank=True)
     long = models.CharField(max_length=200, null=True, blank=True)
     phone = models.CharField(max_length=200, null=True, blank=True)
